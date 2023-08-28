@@ -19,7 +19,7 @@ function! ale_linters#go#punused#ParseErrors(buffer, lines) abort
 		\   'lnum': str2nr(l:match[2]),
 		\  'col': str2nr(l:match[3]),
 		\   'type': 'W',
-		\   'text': "Norminette : " . l:match[4],
+		\   'text': "[punused]: " . l:match[4],
 		\})
     endfor
 
